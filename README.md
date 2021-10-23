@@ -34,6 +34,32 @@
 - react-native-svg-transformer (dev) : transforma imagens SVG importadas em componentes React para o React Native
 - typescript (dev) : adiciona tipagem para javascript
 
+### 📚 Bibliotecas com configurações adicionais ✔️
+
+- se usar arquivos.png no React Native: criar arquivo @types/png.d.ts
+- react-native-svg: criar arquivo @types/svg.d.ts
+- react-native-svg-transformer : criar arquivo metro.config
+- moti:
+  - instalar: expo install react-native-reanimated
+  - adicionar "plugins: ['react-native-reanimated/plugin']", no babel.config
+- expo-auth-session:
+  - adicionar "{"expo": { "scheme": "appName" }}" no app.json
+  - criar conta no Expo.dev
+  - usar no serviço de autenticação a URL e URL Callback: https://auth.expo.io/@your-username/your-app-slug
+
+## 📜 Usando o Expo 📖
+
+- instalando: "yarn global add expo-cli"
+- criando um projeto: "expo init nome-projeto"
+  - escolher a opção de template (utilizamos blank typescript)
+- rodar o projeto: "expo start"
+  - abrirá uma página no navegador web
+  - instalar o app Expo Go no dispositivo
+  - com o dispositivo conectado a mesma rede local que o PC
+  - ler o código QR na página com o app Expo
+  - clicar no run on (SO do dispositivo) se preciso
+- instalar outras bibliotecas do framework Expo ou do React Native : "expo install nomeBiblioteca"
+
 ## 🔐 Resumo do fluxo de autenticação Oauth 🚫
 
 - Solicitar login ao github ao clicar no botão de Login com github
@@ -64,10 +90,20 @@
 
 <img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-heat-mobile-03.jpg" alt="NLW HEAT Img2" width="450"/>
 
-## ⚙️ Link para o projeto do Back-End no Github 🗄️
+## 🚀 Links para todos os projetos criados no evento: 🚀
+
+### 🔗 Link para o projeto do Back-End Node no Github 🗄️
 
 https://github.com/rodolfoHOk/nlw-heat-node
 
-## ⚙️ Link para o projeto do Front-End Web no Github 🖥️
+### 🔗 Link para o projeto do Front-End Web no Github 🖥️
 
 https://github.com/rodolfoHOk/nlw-heat-web
+
+### 🔗 Link para o projeto do Front-End Mobile no Github 📱
+
+https://github.com/rodolfoHOk/nlw-heat-mobile
+
+### 🔗 Link para o projeto do Front-End Elixir no Github 🏷️
+
+https://github.com/rodolfoHOk/nlw-heat-elixir
